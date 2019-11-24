@@ -55,6 +55,7 @@ export default {
         }
     ],
     social: [
+        { name: 'Email', url: 'https://jonatan.ramses.vahlberg@gmail.com' },
         { name: 'Github', url: 'https://github.com/Jonatan-Vahlberg' },
         {
             name: 'LinkedIn',

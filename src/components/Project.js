@@ -27,9 +27,12 @@ const Project = ({
                 <span>{service}</span>
                 <p>{desc}</p>
                 {gitHub !== null && (
-                    <div className='header-title'>
+                    <div className='header'>
                         <button>
-                            <a href='https://github.com/Jonatan-Vahlberg/spoti-theme'>
+                            <a
+                                href={gitHub}
+                                rel='noopener noreferrer'
+                                target='_blank'>
                                 Check out on GitHub!
                             </a>
                         </button>

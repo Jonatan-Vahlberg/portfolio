@@ -1,7 +1,13 @@
+html{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;   
+}
 body {
   font-size: 16;
   background: #fff;
-  overflow-x: hidden;
   z-index: 1;
 
 }
@@ -28,14 +34,15 @@ header{
   align-items: center;
 }
 
-header h1{
+header p{
   font-size: 1em;
   font-weight: 400;  
   padding: 2em;
   margin-right: 50em;
+  margin: 0;
   }
 
-  .header-title button{
+  .header button{
     background: black;
     border: 0px;
     padding: 1em 3em;
@@ -44,11 +51,12 @@ header h1{
     -moz-transition: all 0.2s ease-out;
     -ms-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
+    cursor: pointer;
   }
-  .header-title button:hover{
+  .header button:hover{
     opacity: 0.8;
   }
-  .header-title button a{
+  .header button a{
     font-family: 'Open Sans', sans-serif;
     color:white;
     text-decoration: none;
@@ -59,6 +67,34 @@ header h1{
     font-size: 3em;
     text-align: left;
     top:2em;
+    margin-bottom: 2.2em;
+  }
+  .subheader{
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .subheader > button, .subheader > a{
+    margin-right: 1.5em;
+  }
+
+  .subheader .icon{
+    cursor: pointer;
+    color: #9451ae
+  }
+
+  .subheader .icon:hover{
+    color: #623176;
+  }
+
+  .subheader .linked{
+    color: #0090C0
+  }
+
+  .subheader .linked:hover{
+    color: #00739a
   }
 
 nav {
@@ -68,7 +104,7 @@ nav {
     
     flex: 1;
     background-color: rgba(255, 255, 255, 0.805);
-    width: 100%;
+    width: 100vw;
     justify-content: center;
     align-items: flex-end;
     float: right;
@@ -114,6 +150,7 @@ li .link:hover{
   display: grid;
   grid-template-rows: 100px 1fr;
   grid-template-columns: 1fr 1fr;
+  gap: 20px 0;
 }
 
 .about-title{
@@ -209,15 +246,19 @@ li .link:hover{
 @media only screen and (min-device-width: 320px) and (max-device-width : 800px){
 
   body{
-    font-size: 6px;
+    font-size: 16px;
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0; 
   }
-  header h1{
+  .header-title{
 font-size: 4em;  
-padding: 1em;
 margin-right: 0em;
+top: 0;
+left: 0;
 }
 .App-Header {
-  width: 90vw;
+  padding: .4em;
 }
 .heading-background{
   display: none;
@@ -226,6 +267,9 @@ nav{
   font-size: 2em;
   margin: 0 auto;
   float: none;
+  width: 100vw;
+  padding: 0;
+  padding-top: 0.5em;
 
 }
 
@@ -234,12 +278,14 @@ nav ul{
   float: none;
   padding-left: 0;
 }
+nav ul li {
+  margin: 10px;
+  font-size: 14px;
+}
 
 .header-title{
   font-size: 3em;
   text-align: left;
-  top:1em;
-  left:1em;
 }
 .about{
   position: relative;
@@ -280,14 +326,12 @@ nav ul{
 }
 
 .contact{
-  top:15em;
-  left:2em;
 }
 .contact h1{
   font-size: 4em;
 }
 .contact .email{
-  font-size: 3.5em;
+  font-size: 1.4em;
 }
 
 .contact li{
