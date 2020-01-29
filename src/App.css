@@ -1,15 +1,14 @@
-html{
+html {
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;   
+  overflow-x: hidden;
 }
 body {
   font-size: 16;
   background: #fff;
   z-index: 1;
-
 }
 
 .App {
@@ -23,92 +22,92 @@ body {
   flex-direction: column;
   align-items: center;
   color: black;
-  top:6em;
-  padding: 0px 10em
+  top: 6em;
+  padding: 0px 10em;
 }
 
-header{
+header {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-header p{
+header p {
   font-size: 1em;
-  font-weight: 400;  
+  font-weight: 400;
   padding: 2em;
   margin-right: 50em;
   margin: 0;
-  }
+}
 
-  .header button{
-    background: black;
-    border: 0px;
-    padding: 1em 3em;
-    transition: all 0.2s ease-out;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    cursor: pointer;
-  }
-  .header button:hover{
-    opacity: 0.8;
-  }
-  .header button a{
-    font-family: 'Open Sans', sans-serif;
-    color:white;
-    text-decoration: none;
-  }
-  .header-title{
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3em;
-    text-align: left;
-    top:2em;
-    margin-bottom: 2.2em;
-  }
-  .subheader{
-    float: left;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
+.header button {
+  background: black;
+  border: 0px;
+  padding: 1em 3em;
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+.header button:hover {
+  opacity: 0.8;
+}
+.header button a {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+.header-title {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  text-align: left;
+  top: 2em;
+  margin-bottom: 2.2em;
+}
+.subheader {
+  float: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 
-  .subheader > button, .subheader > a{
-    margin-right: 1.5em;
-  }
+.subheader > button,
+.subheader > a {
+  margin-right: 1.5em;
+}
 
-  .subheader .icon{
-    cursor: pointer;
-    color: #9451ae
-  }
+.subheader .icon {
+  cursor: pointer;
+  color: #9451ae;
+}
 
-  .subheader .icon:hover{
-    color: #623176;
-  }
+.subheader .icon:hover {
+  color: #623176;
+}
 
-  .subheader .linked{
-    color: #0090C0
-  }
+.subheader .linked {
+  color: #0090c0;
+}
 
-  .subheader .linked:hover{
-    color: #00739a
-  }
+.subheader .linked:hover {
+  color: #00739a;
+}
 
 nav {
-    position: fixed;
-    z-index: 10;
-    padding-top: 2em;
-    
-    flex: 1;
-    background-color: rgba(255, 255, 255, 0.805);
-    width: 100vw;
-    justify-content: center;
-    align-items: flex-end;
-    float: right;
-  
+  position: fixed;
+  z-index: 10;
+  padding-top: 2em;
+
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.805);
+  width: 100vw;
+  justify-content: center;
+  align-items: flex-end;
+  float: right;
 }
 
 nav ul {
@@ -116,16 +115,15 @@ nav ul {
   margin-right: 10em;
 }
 
-nav li{
-    display: inline-block;
-    cursor: pointer;
-
+nav li {
+  display: inline-block;
+  cursor: pointer;
 }
 
-nav li .link{
+nav li .link {
   text-decoration: none;
   color: black;
-  padding:1em;
+  padding: 1em;
   opacity: 0.5;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -134,7 +132,7 @@ nav li .link{
   -o-transition: all 0.3s ease-in-out;
 }
 
-li .link:hover{
+li .link:hover {
   opacity: 1;
 }
 
@@ -142,45 +140,43 @@ li .link:hover{
   font-size: 4em;
 }
 
-.Scrollable-Block{
+.Scrollable-Block {
   padding-top: 6em;
 }
 
-.about{
+.about {
   display: grid;
   grid-template-rows: 100px 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 20px 0;
 }
 
-.about-title{
+.about-title {
   grid-row: 1;
-  margin: auto auto
+  margin: auto auto;
 }
-.about-desc{
+.about-desc {
   grid-row: 2;
   padding: 0em 1em;
   font-size: 1.5em;
-
 }
-.about-image{
+.about-image {
   grid-row: 1/3;
   height: 50vh;
-  margin: auto auto
+  margin: auto auto;
 }
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(3,3fr);
+  grid-template-columns: repeat(3, 3fr);
   width: 80vw;
-  
 }
 
-.project{
+.project {
   margin: 10px;
 }
 
-.project p{
+.project p {
   font-size: 1.01em;
 }
 
@@ -201,153 +197,149 @@ li .link:hover{
   cursor: pointer;
 }
 
-.contact{
+.contact {
   width: 80%;
   position: relative;
   text-align: left;
 }
-.contact h1{
-    font-family: 'Montserrat', sans-serif;
+.contact h1 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 4.5em;
   text-align: left;
 }
-.amazing-color{
-  color:#9352ae;
+.amazing-color {
+  color: #9352ae;
   opacity: 1;
 }
 
-.contact .email{
-  color:black;
+.contact .email {
+  color: black;
   font-size: 3em;
 }
-.contact li{
+.contact li {
   display: inline-block;
-  margin-top:0;
+  margin-top: 0;
   margin-bottom: 0;
   margin-right: 1em;
   margin-left: 0;
 }
-.contact li a{
+.contact li a {
   text-decoration: none;
-  color:black;
+  color: black;
   font-size: 2em;
 }
 
-.footer{
+.footer {
   position: relative;
-  top:2em;
+  top: 2em;
   padding: 1em;
 }
-.footer a{
+.footer a {
   text-decoration: none;
-  color:#2c59fb;
+  color: #2c59fb;
 }
 /* SMARTPHONES PORTRAIT */
-@media only screen and (min-device-width: 320px) and (max-device-width : 800px){
-
-  body{
+@media only screen and (min-device-width: 320px) and (max-device-width: 800px) {
+  body {
     font-size: 16px;
     width: 100vw;
     overflow-x: hidden;
-    margin: 0; 
+    margin: 0;
   }
-  .header-title{
-font-size: 4em;  
-margin-right: 0em;
-top: 0;
-left: 0;
-}
-.App-Header {
-  padding: .4em;
-}
-.heading-background{
-  display: none;
-}
-nav{
-  font-size: 2em;
-  margin: 0 auto;
-  float: none;
-  width: 100vw;
-  padding: 0;
-  padding-top: 0.5em;
+  .header-title {
+    font-size: 4em;
+    margin-right: 0em;
+    top: 0;
+    left: 0;
+  }
+  .App-Header {
+    padding: 0.4em;
+  }
+  .heading-background {
+    display: none;
+  }
+  nav {
+    font-size: 2em;
+    margin: 0 auto;
+    float: none;
+    width: 100vw;
+    padding: 0;
+    padding-top: 0.5em;
+  }
 
-}
+  nav ul {
+    margin: 0 auto;
+    float: none;
+    padding-left: 0;
+  }
+  nav ul li {
+    margin: 10px;
+    font-size: 14px;
+  }
 
-nav ul{
-  margin:  0 auto;
-  float: none;
-  padding-left: 0;
-}
-nav ul li {
-  margin: 10px;
-  font-size: 14px;
-}
+  .header-title {
+    font-size: 3em;
+    text-align: left;
+  }
+  .about {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .about-title {
+    grid-row: 1;
+  }
+  .about-image {
+    grid-row: 2;
+    height: 30vh;
+  }
+  .about-desc {
+    grid-row: 3;
+  }
+  .about-content p {
+    font-size: 3.5em;
+    text-align: left;
+    width: 300px;
+  }
 
-.header-title{
-  font-size: 3em;
-  text-align: left;
-}
-.about{
-  position: relative;
-      display: grid;
-      grid-template-columns: 1fr;
-      width: 100%;
-}
-.about-title {
-  grid-row:1
-}
-.about-image{
-  grid-row: 2;
-  height: 30vh;
-}
-.about-desc{
-  grid-row: 3
-}
-.about-content p{
-  font-size: 3.5em;
-  text-align: left;
-  width: 300px;
-}
+  .projects {
+    left: 2em;
+    top: 2em;
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+  }
+  .work .work-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5em;
+  }
+  .project img {
+    height: 42.18vw;
+    width: 75vw;
+  }
 
-.projects{
-  left:2em;
-  top:2em;
-  grid-template-columns: 1fr;
-  align-items: flex-start;
-}
-.work .work-content{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 5em;
-}
-.project img{
-  height: 42.18vw;
-  width: 75vw;
-}
+  .contact {
+  }
+  .contact h1 {
+    font-size: 4em;
+  }
+  .contact .email {
+    font-size: 1.4em;
+  }
 
-.contact{
-}
-.contact h1{
-  font-size: 4em;
-}
-.contact .email{
-  font-size: 1.4em;
-}
-
-.contact li{
-  display: block;
-  padding: 2em;
-}
-.contact li a{
-  font-size: 2.5em;
-}
-.footer{
-  top:4em;
-  padding: 1em;
-  font-size: 2em;
-}
-
-
+  .contact li {
+    display: block;
+    padding: 2em;
+  }
+  .contact li a {
+    font-size: 2.5em;
+  }
+  .footer {
+    top: 4em;
+    padding: 1em;
+    font-size: 2em;
+  }
 }
 
 /* iPads (portrait and landscape) -----------
